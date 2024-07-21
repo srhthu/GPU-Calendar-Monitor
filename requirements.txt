@@ -1,0 +1,6 @@
+pynvml
+flask
+requests
+psutil
+pandas
+toml

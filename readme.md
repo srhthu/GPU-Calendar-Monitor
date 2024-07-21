@@ -18,6 +18,11 @@ The main idea is that:
 # Usage
 We first show the function of some main components in Section [Debug](#debug), then introduce how to deploy the monitor system ([Deploy](#deploy)).
 
+First, install requirements by
+```
+pip install -r requirements.txt
+```
+
 ## Debug
 ### Client 
 The client daemons that run on each node is to periodically collect and aggregate client status information. To view the client status in `JSON`, run 
