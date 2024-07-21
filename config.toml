@@ -1,0 +1,25 @@
+[client]
+interval = 4 # refresh interval of 
+interval_proc = 6 # refresh interval of gpu process
+extra_keys = ['ips']
+port = 7080
+
+# comment the following line to disable password
+passwd = "next"
+
+[main]
+port = 7070
+passwd = "next" # should be the same as client.passwd
+add_calendar = true
+client_port = 7080 # should be the same as client.port
+teamup_ids = ['xxx', 'yyy']
+num_days = 7
+node_wait = 4
+node_expire_time = 60
+cal_wait = 10
+dur_book_update = 3
+
+host_data = [
+    {nickname = "next-asus-01", ip= "next-asus-01.d2.comp.nus.edu.sg"},
+    {nickname = "next-asus-02", ip= "next-asus-02.d2.comp.nus.edu.sg"}
+]

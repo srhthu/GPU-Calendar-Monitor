@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPU Monitor</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/web/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/web/style.css">
+</head>
+
+<body>
+    <div class="title"><h2>GPU Real-Time Monitor</h2></div>
+    <div class='control btn-line'>
+        <button id="update">Refresh</button>
+        <button id="auto-update">Auto Refresh</button>
+        <button id="stop-update">Stop Refresh</button>
+    </div>
+    <div class="control">
+        We have two calendars for gpu booking:
+        <b>Node1-4</b>
+        (<a href="" target="_blank">Link1</a>)&nbsp;
+        <b>Node5-8</b>
+        (<a href="" target="_blank">Link2</a>)&nbsp;
+        <br>
+        <div>
+            <b>Rules</b>: 
+            <ul>
+            <li>Each gpu is booked under the username &lt;title&gt; and is shared among multiple users &lt;who&gt; (separated by ,). <br></li>
+            <li>The display format of the calendar is &lt;title&gt;(&lt;who&gt;).</li>
+            <li>Each user can share up to <b>8</b> gpus across all booking days.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="control" id="warning">
+        <!--warning information here-->
+    </div>
+    <br>
+    <div id="display-area">
+        <div id="head-wrapper">
+            <div id="head-line">
+                <div class="head colum gpu-idx">GPU</div>
+                <div class="head colum memory">Memory</div>
+                <div class="head colum utilize">Utilize</div>
+                <div class="head colum users">Who is using</div>
+                <div class="head colum schedule">
+                    <!--<div class="head colum schedule-day sample"> 2020 06 01 </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="content-status-sample">
+            <div class="node-line">
+                <div class="node-info">
+                    <div class="colum node-name">node 1</div>
+                    <div class="colum node-status" data-status=""></div>
+                    <div class="colum node-version"></div>
+                    <div class="colum node-ip"></div>
+                </div>
+                <div class="gpu-list">
+                    <div class="gpu-line">
+                        <div class="colum gpu-idx"></div>
+                        <div class="colum memory">Memory</div>
+                        <div class="colum utilize">Utilize</div>
+                        <div class="colum users">username</div>
+                        <div class="colum schedule">
+                            <!--<div class="colum schedule-day"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-status">
+
+        </div>
+    </div>
+</body>

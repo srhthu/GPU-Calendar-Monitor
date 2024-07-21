@@ -1,0 +1,247 @@
+.inline {
+    display: inline-block;
+}
+
+#content-status-sample {
+    display: none;
+}
+
+body {
+    text-align: center;
+}
+
+body>* {
+    position: relative;
+}
+
+#content-status {
+    display: block;
+    text-align: left;
+}
+
+/*colum width*/
+.colum {
+    border-left: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    white-space: normal;
+}
+
+.colum:nth-child(1) {
+    border-left: 1px solid white;
+}
+
+.colum.node-status {
+    border: none;
+}
+
+.colum.node-version {
+    border: none;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.colum.node-ip {
+    border: none;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.colum.gpu-idx {
+    width: 100px;
+}
+
+.colum.memory {
+    width: 150px;
+}
+
+.colum.utilize {
+    width: 100px;
+}
+
+.colum.users {
+    width: 180px;
+}
+
+.colum.schedule{
+    white-space: nowrap;
+}
+
+.colum.schedule-day {
+    width: 180px;
+}
+
+
+/*spacing*/
+.node-line {
+    margin-bottom: 15px;
+}
+
+.gpu-line {
+    border-bottom: 2px solid lightblue;
+    padding: 5px 0 5px 0;
+}
+
+.node-info {
+    margin: 0px 0 0px 0;
+    border-left: 5px solid darkgrey;
+}
+
+.node-name {
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+}
+
+.node-status {
+    width: 2em;
+    height: 1em;
+}
+
+.node-status[data-status="true"] {
+    background-color: skyblue;
+}
+
+.node-status[data-status="false"] {
+    background-color: brown;
+}
+
+/*head*/
+.title{
+    margin:20px 0 10px 0;
+    text-align:center;
+}
+.control{
+    text-align:left;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+}
+
+.control.btn-line{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#head-line {
+    padding: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#duty {
+    color: rgb(85, 85, 85)
+}
+
+.control a {
+    font-size: 20px;
+    color: skyblue;
+    font-weight: bold;
+}
+
+/*Update 2011.11.1 Illegal Checking*/
+.illegal_user {
+    color: rgb(255, 166, 0);
+}
+
+.blue {
+    color: orange;
+    font-size: 20px;
+}
+
+/*
+.gpu-line,#head-line {
+    display: grid;
+    grid-template-columns: 100px 150px 100px 180px 1260px;
+}
+*/
+
+/*
+.gpu-line,#head-line {
+    text-align: left;
+    white-space: nowrap;
+}
+*/
+.colum.schedule{
+    text-align: left;
+}
+
+/*Update 2022.1.6 Illegal Checking*/
+div.error_legend {
+    width: 1em;
+    height: 1em;
+    margin: 0 0.6em 0 0.6em;
+}
+
+div.error_legend.illegal_booking{
+    background-color: orangered;
+}
+
+span.illegal_booking{
+    color: orangered;
+}
+
+div.error_legend.illegal_maxgpu{
+    background-color: #CCCC00;
+}
+
+span.illegal_maxgpu{
+    color: #CCCC00;
+}
+
+div.error_legend.illegal_maxday {
+    background-color:#0066CC;
+}
+
+span.illegal_maxday {
+    color:#0066CC;
+}
+
+.legend_line {
+    vertical-align:middle;
+}
+
+/*Update 2022.7.25 set the width of each column*/
+.colum.schedule{
+    text-align: left;
+}
+
+.colum.gpu-idx {
+    width: 100px;
+}
+.colum.memory {
+    width: 200px;
+}
+.colum.utilize {
+    width: 100px;
+}
+.colum.users {
+    width: 150px;
+}
+.colum.schedule-day {
+    width: 150px;
+}
+.head {
+    display: inline-block;
+}
+#head-line{
+    white-space: nowrap;
+    width: auto;
+    background-color: PapayaWhip;
+    display: inline-block; /*populate content*/
+}
+.gpu-line{
+    white-space: nowrap;
+    width: auto;
+    display: inline-block;
+}
+
+#head-wrapper{
+    padding: 10px 0 10px 0;
+    text-align: left;
+}
+.nav-at-top{
+    position: fixed;
+    top: 0;
+    width:100%;
+
+}
