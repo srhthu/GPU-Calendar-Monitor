@@ -273,7 +273,10 @@ class Cluster:
         status_df = pd.concat([df.pop(k) for k in ['invalid_book', 'violate_ngpu', 'violate_day']], axis = 1)
 
         if self.add_calendar:
-            df['code'] = status_df.apply(lambda k: status2code(*k.tolist()), axis = 1)
+            if len(status_df) == 0:
+                df['code'] = [0] * len(df)
+            else:
+                df['code'] = status_df.apply(lambda k: status2code(*k.tolist()), axis = 1)
         else:
             df['code'] = [0] * len(df)
         return df
